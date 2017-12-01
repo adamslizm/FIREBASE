@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+  <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+  <h1><center>Employee Data Management<center></h1>
+  <p><center>A Comprehensive Directory of Employee Billable Hours<center></p>
+  </div>
+</div>
+<!--add employees-->
+<div class="table">
+  <a href="#Current-employees" class="list-group-item active">
+    Current Employees
+  </a>
+</div>
+  <div class="table">
+  <table class="table">
+  	
+  		<div class="row">
+  			<div class="col-lg-12">
+  				<thead>
+  				<tr>
+  <th scope="col" id= "Employee-Name">Employee Name</th> 
+  <th scope="col" id= "Role">Role</th> 
+  <th scope="col" id= "Months-worked">Months Worked</th>
+  <th scope="col" id= "Monthly-rate">Monthly Rate</th>
+  <th scope="col" id= "Total-billed">Total Billed</th>
+  </tr>
+</thead>
+<tbody>
+	<tr>
+      <div class="row"></div>
+      <td colspan="#Employee-Name"></td>
+      <td colspan="#Role"></td>
+      <td colspan="#Months-worked"></td>
+      <td colspan="#Monthly-rate"></td>
+      <td colspan="#Total-billed"></td>
+  </tr>
+  <tr>
+      <div class="row"></div>
+      <td colspan="#Employee-Name"></td>
+      <td colspan="#Role"></td>
+      <td colspan="#Months-worked"></td>
+      <td colspan="#Monthly-rate"></td>
+      <td colspan="#Total-billed"></td>
+  </tr>
+  <tr>
+      <div class="row"></div>
+      <td colspan="#Employee-Name"></td>
+      <td colspan="#Role"></td>
+      <td colspan="#Months-worked"></td>
+      <td colspan="#Monthly-rate"></td>
+      <td colspan="#Total-billed"></td>
+  </tr>
+</tbody>
+
+</table>
+
+</div>
+ 
+<div class="list-group">
+  <a href="#Add-employee" class="list-group-item active">
+    Add Employee
+  </a>
+
+<form>
+  <div class="form-group">
+    <label for="inputName">Employee Name</label>
+    <input type="text" class="form-control" id="inputName">
+  </div>
+  <div class="form-group">
+    <label for="inputRole">Role</label>
+    <input type="text" class="form-control" id="inputRole">
+  </div>
+  <div class="form-group">
+    <label for="inputDate">Start Date (DD/MM/YY -ex: 01/01/89)</label>
+    <input type="date" class="form-control" id="inputDate">
+  </div>
+  <div class="form-group">
+    <label for="inputRate">Monthly Rate</label>
+    <input type="number" class="form-control" id="inputRate">
+  </div>
+  <!-- <div class="form-group">
+    <label for="exampleInputFile">Submit</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block"></p>
+  </div> -->
+  <button id="submit" type="submit" class="btn btn-default">Submit</button>
+</form>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
